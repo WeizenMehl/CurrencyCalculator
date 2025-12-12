@@ -29,7 +29,7 @@ int main() {
         printf("\nWaehlen Sie eine Zielwaehrung aus: ");
         scanf("%i", &zielwaehrung);
 
-        if(is_Euro(ausgangswaehrung) == 1 && is_not_Euro(zielwaehrung) ==1){    //if Schleifen die prüfen ob in was in wasumgerechnet werden und rechnungsweg festlegen
+        if(is_Euro(ausgangswaehrung) == 1 && is_not_Euro(zielwaehrung) ==1){    //if funktion die prüfen ob in was in wasumgerechnet werden und rechnungsweg festlegen
             ergebnis = conversion(betrag,zielwaehrung,0);
             output(ausgangswaehrung, zielwaehrung, betrag, ergebnis);
         }
@@ -110,7 +110,7 @@ void output(int ausgangswaehrung, int zielwaehrung, float betrag_Ausgangwaehrung
     printf("\nDie Ausgangwaehrung ist: %i", ausgangswaehrung);
     printf("\nDie Zielwaehrung ist: %i ",zielwaehrung);
     printf("\nDer Betrag der Ausgangswaehrung ist: %.2f ",betrag_Ausgangwaehrung);
-    printf("\nDer Betrag der Zielwaehrung ist: %.2f\n\n ",betrag_Zielwaehrung);
+    printf("\nDer Betrag der Zielwaehrung ist: %.2f\n\n",betrag_Zielwaehrung);
 }
 int is_Euro(int weahrung){  //Funktion zur bestätigung das Währung Euro ist
     if(weahrung == 1)
