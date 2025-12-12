@@ -29,7 +29,7 @@ int main() {
         printf("\nWaehlen Sie eine Zielwaehrung aus: ");
         scanf("%i", &zielwaehrung);
 
-        if(is_Euro(ausgangswaehrung) == 1 && is_not_Euro(zielwaehrung) ==1){    //if funktion die prüfen ob in was in wasumgerechnet werden und rechnungsweg festlegen
+        if(is_Euro(ausgangswaehrung) == 1 && is_not_Euro(zielwaehrung) ==1){    //if funktion die prüfen ob in was in was umgerechnet werden und rechnungsweg festlegen
             ergebnis = conversion(betrag,zielwaehrung,0);
             output(ausgangswaehrung, zielwaehrung, betrag, ergebnis);
         }
